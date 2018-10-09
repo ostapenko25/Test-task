@@ -1,0 +1,56 @@
+/*MEDIA*/
+
+/*Desctop*/
+@media (min-width: 768px) {
+	#menuToggle {
+		display: none
+	}
+}
+
+/*end Desctop*/
+
+/****************************************************************/
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+
+	
+	.hamburger-menu {
+		display:  block
+	}
+	
+	.desk-menu {
+	display: none !important
+	}	
+	
+	.header {
+		height: 120px ;
+	}
+	
+	.main {
+		margin-top: -40px;
+	}
+	
+	h1 {
+		font-size: 3rem
+	}
+	
+	h2 {
+		font-size: 1rem
+	}
+	
+	.skills {
+		flex-direction: column;		
+		width: 60%;
+		height: auto
+	}
+	
+	.skills-block {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;		
+	}
+}
+/*end Mobile*/

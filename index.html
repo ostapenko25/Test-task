@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test for Web Masterskaya</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta title="Test for Web Masterskaya">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="normalize.css" rel="stylesheet" type="text/css"> 
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="media.css" rel="stylesheet" type="text/css">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	   <script
+				  src="https://code.jquery.com/jquery-3.3.1.min.js"
+				  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				  crossorigin="anonymous"></script>
+		</head>		
+
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<body>
+	
+	<div class="wrapper">
+			<!--Header-->
+			<div class="header"> 				
+					<ul class="desk-menu">
+						<li><a href="#personal" class="active">Личная информация</a></li>
+						<li><a href="#exper">Опыт</a></li>
+						<li><a href="#js">Javascript</a></li>                
+						<li><a href="#about">О себе</a></li>			
+				    </ul>
+				
+					<nav class="menu-wrapper">
+							<div id="hamburger" class="hamburger-menu">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+								<nav id="nav-hamb" class="nav-hamb-xs">			
+									<ul class="nav">		
+										<li><a href="#personal" class="active">Личная информация</a></li>
+										<li><a href="#exper">Опыт</a></li>
+										<li><a href="#js">Javascript</a></li>  
+										<li><a href="#about">О себе</a></li>	
+									</ul>
+								</nav>
+							</div>	
+					</nav>
+			</div>				
+		<!--end Header-->
+				
+			<div class="main">	
+				<form class="mainform" action="/echo" name="brand" method="post">
+					<h1>Анкета</h1>	
+					<!--Personal-->
+					<div id="personal" class="section">				
+						<div class="icon pers-icon"></div>
+						<h2>Личная информация</h2>
+								<input type="text" id="name" name="name" placeholder="Остапенко Юлия" required>		
+						        <select>
+										<option value="1980">1980</option>
+										<option value="1981">1981</option>
+										<option value="1982">1982</option>
+										<option value="1983">1983</option>
+								</select> 
+								<input type="text" id="city" name="city" placeholder="г.Львов, Украина" required>	
+							    <input type="text" id="skype" name="skype" placeholder="yulhen23" required>	
+							    <input type="text" id="tel" name="tel" placeholder="ostapenko25@ukr.net" required>	
+
+					</div>		
+					<!--end Personal-->
+
+					<!--Exper-->
+					<div id="exper" class="section">
+						<div class="icon exp-icon"></div>
+						<h2>Расскажите о своем опыте</h2>				
+							<div class="skills">
+
+								<ul class="skills-block">
+									<li><input type="checkbox" checked value="slider" id="skill1"><label for="skill1"><span></span>БЭМ/OOCSS</label></li>
+
+									<li><input type="checkbox" checked value="features" id="skill2"><label for="skill2"><span></span>Stylus/LESS/SASS</label></li>
+
+									<li><input type="checkbox" checked value="news" id="skill3"><label for="skill13"><span></span>Работаю с SVG</label></li>
+								</ul>
+
+								<ul class="skills-block">
+									<li><input type="checkbox" checked value="gallery"  id="skill4"><label for="skill4"><span></span>Верстаю семантично</label></li>
+									<li><input type="checkbox" checked value="cart"  id="skill5"><label for="skill5"><span></span>ES2015/ES2016</label> </li>
+									<li><input type="checkbox" value="slider" id="skill6"><label for="skill6"><span></span> Gulp/GRUNT</label></li>
+								</ul>
+
+								<ul class="skills-block">
+									<li><input type="checkbox" value="features" id="skill7"><label for="skill7"><span></span>Webpack</label></li>
+
+									<li><input type="checkbox" checked value="slider" id="skill8"><label for="skill8"><span></span> jQuery</label></li>
+									<li><input type="checkbox" checked value="features" id="skill9"><label for="skill9"><span></span>Использую Git</label></li>
+								</ul>
+
+							</div>                   	
+					</div>
+					<!--end Exper-->
+
+					<!--js-->
+					<div id="js" class="section">
+						<div class="icon js-icon"></div>
+						<h2>Уровень владения Javascript</h2>
+						 Slider bar
+						<div class="inputRange">
+							  <div class="text">Не владею</div>
+							  <div class="text">Использую готовые решения</div>
+							  <div class="text">Использую готовые решения и умею переделывать</div>
+							  <div class="text">Пишу сложный js с нуля</div>
+							  <div class="bar">
+							  <div class="dis"></div>
+							  </div>
+							  <div class="pointer"></div>
+						</div>
+					</div>
+					<!--end js-->
+
+					<!--About-->
+					<div id="about" class="section">
+						<div class="icon about-icon"></div>
+						<h2>Расскажите о себе</h2>
+						<p>Напишите несколько предложений, чем привлекла наша вакансия
+		и что вы ожидаете от работы у нас.</p>
+						<textarea id="myInput" rows="10" cols="50" placeholder="Хочу работать в компании, которая много лет находится на рынке, так как заинтересована в стабильном, многолетнем сотрудничестве. Также очень привлекает возможность удаленной работы (имею пятилетний опыт работы на удаленке и считаю его для себя наиболее эффективным)."></textarea>
+					</div>
+					<!--end About-->
+
+					<button class="btn">Готово</button>	
+
+				</form>
+			</div>	
+	</div>	
+
+	<script src="script.js"> </script>    
+	
+</body>
+</html>
